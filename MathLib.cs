@@ -23,5 +23,6 @@
         }
 
         public class CalcException : Exception { };
+        public class BadOperatorException : CalcException { };
     }
 }

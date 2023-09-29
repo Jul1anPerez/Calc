@@ -32,7 +32,7 @@ namespace Calculator
                     mathRequest.Result = Calculate(mathRequest);
                     Console.WriteLine(mathRequest.ToString());
                 }
-                catch (MathLib.CalcException ex)
+                catch (MathLib.BadOperatorException ex)
                 {
                     Console.WriteLine("This operator " + oper + " doesn't exist !");
                 }
@@ -51,7 +51,7 @@ namespace Calculator
                 case '/':
                     return MathLib.Div(mathRequest);
                 default:
-                    throw new CalcException();
+                    throw new BadOperatorException();
             }
         }
     }

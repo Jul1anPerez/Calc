@@ -1,4 +1,4 @@
-﻿namespace CalculatorB2B
+﻿namespace Calculator
 {
     public static class MathLib
     {
